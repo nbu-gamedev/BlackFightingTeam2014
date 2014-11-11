@@ -1,0 +1,6 @@
+In this folder will go all header and source that will be needed for CLIENT and SERVER.
+
+For example:
+- Vector
+- BSD
+etc..

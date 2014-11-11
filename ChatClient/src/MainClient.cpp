@@ -1,9 +1,9 @@
 //============================================================================
-// Name        : ChatClient.cpp
-// Author      : NewKnight
-// Version     :
+// Name        : MainClient.cpp
+// Author      : Ivaylo, Niki, Mitko
+// Version     : 0.1
 // Copyright   : Never stop dreaming!
-// Description : Hello World in C++, Ansi-style
+// Description : Black Fithing Team {BFT}
 //============================================================================
 
 
