@@ -35,7 +35,7 @@ int main() {
 				}
 				else
 					break;
-				if(ClientSocket < 0)
+				if(INVALID_SOCKET == ClientSocket)
 				{
 					printf("accept failed with error : %d\n", WSAGetLastError());
 					break;

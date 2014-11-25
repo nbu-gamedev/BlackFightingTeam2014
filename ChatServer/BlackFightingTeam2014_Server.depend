@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1416922490 source:d:\projects\blackfightingteam2014\chatserver\src\headers\common\bsd.cpp
+	"BSD.h"
+
+1416922490 d:\projects\blackfightingteam2014\chatserver\src\headers\common\bsd.h
+	<stdio.h>
+	<string>
+	<winsock2.h>
+	<windows.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+
+1416927808 source:d:\projects\blackfightingteam2014\chatserver\src\mainserver.cpp
+	<stdio.h>
+	<string>
+	"Headers/ServerComponents.h"
+	"Headers/Common/BSD.h"
+
+1416927776 d:\projects\blackfightingteam2014\chatserver\src\headers\servercomponents.h
+	<stdio.h>
+	<winsock2.h>
+	<windows.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+

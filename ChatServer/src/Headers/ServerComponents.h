@@ -56,7 +56,7 @@ bool InitSocket(void)
 
 	Socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);	 	// returns a socket descriptor which can be used in other network commands;
 
-	if(Socket < 0)
+	if(INVALID_SOCKET == Socket)
 	{
 #ifdef WIN32
 		printf("Could not create socket : %d" , WSAGetLastError());
@@ -100,8 +100,9 @@ bool AcceptConn(void)
 {
 	bool check = false;
 	s_size = sizeof(struct sockaddr_in);
+    ClientSocket = accept(Socket,(struct sockaddr* )&client,&s_size);
 
-	if( 0 > (ClientSocket = accept(Socket,(struct sockaddr* )&client,&s_size)))
+	if( INVALID_SOCKET == ClientSocket)
 	{
 		printf("Error for connection...\n");
 		check = false;

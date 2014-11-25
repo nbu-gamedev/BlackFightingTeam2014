@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <string>
+#include <iostream>
 #include "Headers/Common/BSD.h"
 #include "Headers/ClientComponents.h"
 #ifdef WIN32			//WIndows
@@ -30,18 +31,25 @@ int main(int argc, char **argv) {
 	char send_message[MAX_SIZE];
 	if(Connect("127.0.0.1",8888))
 	{
+		printf("Enter data for the Server: ");
 		while(1)
 		{
-			printf("Enter data for the Server: ");
-			fgets(send_message, MAX_SIZE-1, stdin);
-			if(Test.SendData(send_message,Socket))
+			if(0<std::cin.gcount())
 			{
-				if(!Test.ReciveData(Socket))
+//				fgets(send_message, MAX_SIZE-1, stdin);
+				std::cin >> send_message;
+
+				if(Test.SendData(send_message,Socket))
+				{
+					if(!Test.ReciveData(Socket))
+						break;
+				}
+				else
+				{
+					printf("Failed to send the packet...\n");
 					break;
+				}
 			}
-			else
-				printf("Failed to send the packet...\n");
-				break;
 		}
 	}
 
