@@ -44,11 +44,20 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="src/Headers/ClientComponents.h" />
-		<Unit filename="src/Headers/Common/BSD.cpp" />
-		<Unit filename="src/Headers/Common/BSD.h" />
-		<Unit filename="src/Headers/Common/READ.txt" />
-		<Unit filename="src/Headers/Graphic/READ.txt" />
+		<Unit filename="src/ClientComponents.h" />
+		<Unit filename="src/Common/BSD.cpp" />
+		<Unit filename="src/Common/BSD.h" />
+		<Unit filename="src/Common/READ.txt" />
+		<Unit filename="src/Graphic/Definitions.h" />
+		<Unit filename="src/Graphic/Elements.cpp" />
+		<Unit filename="src/Graphic/Elements.h" />
+		<Unit filename="src/Graphic/Graphic.cpp" />
+		<Unit filename="src/Graphic/Graphic.h" />
+		<Unit filename="src/Graphic/READ.txt" />
+		<Unit filename="src/Graphic/Vector2D.cpp" />
+		<Unit filename="src/Graphic/Vector2D.h" />
+		<Unit filename="src/Graphic/Window.cpp" />
+		<Unit filename="src/Graphic/Window.h" />
 		<Unit filename="src/MainClient.cpp" />
 		<Extensions>
 			<code_completion />
