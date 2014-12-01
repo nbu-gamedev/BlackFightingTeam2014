@@ -30,8 +30,9 @@ bool BSD::ReciveData(unsigned int socket)
 {
 	char recv_data[MAX_SIZE];
 	bool check = false;
+	int res = recv_size = recv(socket, recv_data,2000,0);
 
-	if( 0 > (recv_size = recv(socket, recv_data,2000,0)))
+	if( 0 > res)
 	{
 #ifdef WIN32
 		printf("Connection reset by peer : %d\n", WSAGetLastError());

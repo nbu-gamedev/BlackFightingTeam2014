@@ -1,3 +1,7 @@
+#ifndef Included_BSD_H
+#define Included_BSD_H
+
+
 #include <stdio.h>
 #include <string>
 #ifdef WIN32			//WIndows
@@ -23,8 +27,6 @@ public:
 #else
 	int Socket;
 #endif
-
-public:
 	BSD();
 	BSD(SOCKET socket);
 	//~BSD();
@@ -32,3 +34,6 @@ public:
 	bool ReciveData(unsigned int socket);
 	bool SendData(const char* str,unsigned int socket);
 };
+
+
+#endif // Included_BSD_H

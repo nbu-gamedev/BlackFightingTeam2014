@@ -21,29 +21,10 @@ int main() {
 	InitSocket();
 	SetServer("127.0.0.1",8888,3);
 
-	while(1){
-		if(AcceptConn())
-		{
-			BSD tmp(ClientSocket);
-			printf("Connections accepted \n");
-			while(1)
-			{
-				if(tmp.ReciveData(ClientSocket))
-				{
-					if(!tmp.SendData("Hello",ClientSocket))
-						break;
-				}
-				else
-					break;
-				if(INVALID_SOCKET == ClientSocket)
-				{
-					printf("accept failed with error : %d\n", WSAGetLastError());
-					break;
-				}
-			}
+	while(AcceptConn(void))
+    {
 
-		}
-	}
+    }
 
 #ifdef WIN32
 		WSACleanup();

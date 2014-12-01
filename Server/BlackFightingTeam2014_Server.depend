@@ -29,3 +29,34 @@
 	<arpa/inet.h>
 	<errno.h>
 
+1417467784 source:c:\users\newknight\desktop\theblackteam\server\src\headers\common\bsd.cpp
+	"BSD.h"
+
+1417467897 c:\users\newknight\desktop\theblackteam\server\src\headers\common\bsd.h
+	<stdio.h>
+	<string>
+	<winsock2.h>
+	<windows.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+
+1417467123 source:c:\users\newknight\desktop\theblackteam\server\src\mainserver.cpp
+	<stdio.h>
+	<string>
+	"Headers/ServerComponents.h"
+	"Headers/Common/BSD.h"
+
+1417467424 c:\users\newknight\desktop\theblackteam\server\src\headers\servercomponents.h
+	"Common/BSD.h"
+	<stdio.h>
+	<winsock2.h>
+	<windows.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+

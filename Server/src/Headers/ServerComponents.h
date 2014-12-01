@@ -8,6 +8,8 @@
 #ifndef HEADERS_SERVERCOMPONENTS_H_
 #define HEADERS_SERVERCOMPONENTS_H_
 
+#include "Common/BSD.h"
+
 #include <stdio.h>
 #ifdef WIN32			//WIndows
 #include <winsock2.h>
@@ -24,6 +26,7 @@
 int recv_size = 0;
 int s_size = 0;
 struct sockaddr_in server, client;
+BSD tmp;
 
 
 #ifdef WIN32
@@ -96,10 +99,32 @@ void SetServer(const char* IP,int port,int num_listeners)
 	printf("Waiting for incoming connections... \n");
 }
 
+DWORD WINAPI SocketHandler(void* lp)        // TODO: Different on UNIX system
+{
+    int* sock = (int*)lp;
+
+    char buffer[1024];
+    int buffer_len = 1024;
+    int bytecount;
+
+    memset(buffer,0,buffer_len);
+    bytecount = recv(*sock,buffer,buffer_len,0);
+    if(bytecount == SOCKET_ERROR)
+    {
+        printf("Error sending data %d\n",WSAGetLastError());
+        goto FINISH;
+    }
+FINISH:
+    free(sock);
+    return 0;
+
+}
+
 bool AcceptConn(void)
 {
 	bool check = false;
 	s_size = sizeof(struct sockaddr_in);
+
     ClientSocket = accept(Socket,(struct sockaddr* )&client,&s_size);
 
 	if( INVALID_SOCKET == ClientSocket)
@@ -110,9 +135,20 @@ bool AcceptConn(void)
 	else
 	{
 		printf("Server got connection from client %s \n", inet_ntoa(client.sin_addr));
+		CreateThread(0,0,&SocketHandler,(void*)ClientSocket,0,0);
 		check = true;
 	}
 	return check;
 }
 
 #endif /* HEADERS_SERVERCOMPONENTS_H_ */
+
+
+
+
+
+
+
+
+
+
