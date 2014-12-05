@@ -130,30 +130,28 @@ void Picture::Draw(int x, int y,int width, int height, float angle, SDL_Renderer
 }
 
 
-void DrawBox(SDL_Renderer* render, int x, int y, int width, int height,
-		unsigned long red,unsigned long green, unsigned long blue, unsigned long alpha)
+void DrawBox(SDL_Renderer* render, int x, int y, int width, int height,SDL_Color& boxcolor)
 {
 
 
-	SDL_SetRenderDrawColor(render, red, green, blue, alpha);
+	SDL_SetRenderDrawColor(render,boxcolor.r,boxcolor.g,boxcolor.b,boxcolor.a  );
 
 	SDL_Rect Rectagle{x, y, width, height};
 	SDL_RenderDrawRect(render,&Rectagle);
 }
 
-void FillBox(SDL_Renderer* render, int x, int y, int width, int height,
-		unsigned long red,unsigned long green, unsigned long blue, unsigned long alpha)
+void FillBox(SDL_Renderer* render, int x, int y, int width, int height,SDL_Color& fillcolor)
 {
-	SDL_SetRenderDrawColor(render, red, green, blue, alpha );
+	SDL_SetRenderDrawColor(render, fillcolor.r,fillcolor.g,fillcolor.b,fillcolor.a  );
 	SDL_Rect Rectagle{x, y, width, height};
 	SDL_RenderFillRect( render, &Rectagle);
 }
 
-void DrawCircle(SDL_Renderer* render, int center_x, int center_y, int radius,unsigned long red,unsigned long green, unsigned long blue, unsigned long alpha )
+void DrawCircle(SDL_Renderer* render, int center_x, int center_y, int radius,SDL_Color& circlecolor)
 {
 	float two_pi=6.283f;
 
-	SDL_SetRenderDrawColor(render, red, green, blue, alpha );
+	SDL_SetRenderDrawColor(render, circlecolor.r,circlecolor.g,circlecolor.b,circlecolor.a   );
 	float angle_inc=1.0f/radius;
 	for(float angle=0.0f; angle<= two_pi;angle+=angle_inc){
 	    int xpos=center_x+radius*cos(angle);
