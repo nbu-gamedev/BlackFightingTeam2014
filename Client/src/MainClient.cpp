@@ -10,8 +10,8 @@
 #include <stdio.h>
 #include <string>
 #include <iostream>
-#include "Headers/Common/BSD.h"
-#include "Headers/ClientComponents.h"
+#include "Common/BSD.h"
+#include "ClientComponents.h"
 #ifdef WIN32			//WIndows
 #include <winsock2.h>
 #include <windows.h>
@@ -34,10 +34,7 @@ int main(int argc, char **argv) {
 		printf("Enter data for the Server: ");
 		while(1)
 		{
-			if(0<std::cin.gcount())
-			{
-//				fgets(send_message, MAX_SIZE-1, stdin);
-				std::cin >> send_message;
+				fgets(send_message, MAX_SIZE-1, stdin);
 
 				if(Test.SendData(send_message,Socket))
 				{
@@ -51,7 +48,6 @@ int main(int argc, char **argv) {
 				}
 			}
 		}
-	}
 
 #ifdef WIN32
 		closesocket(Socket);
