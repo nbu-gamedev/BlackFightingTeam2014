@@ -12,6 +12,7 @@
 #include "Graphic.h"
 #include "vector"
 #include "algorithm"
+#include "string"
 struct Color
 {
     unsigned int red;
@@ -26,8 +27,12 @@ enum Align
     Aline_right,
     Aline_normal,
 };
-
-enum ElementWidth
+enum DrawType//choose which of the both drawing type to use the object. main value-dColor
+{
+    dPicture,
+    dColor,
+};
+enum ElementWidth// choose the width of th object: to take the parent width or to use his own value for width
 {
     ParentWidth,
     OwnWidth,
@@ -46,8 +51,11 @@ public:
 	 bool m_Clicked=false;
 	 int m_Aline;
 	 int m_custamWidth;
+	 int m_DrawType;
+	 float m_angle;
+	 ButtonImg m_image;
 	 std::vector<Container *> m_member;
-	 Container():m_Left(0),m_Top(0),m_width(0),m_height(0),m_active(true),m_visible(true),m_owner(NULL), m_Aline(Aline_normal), m_custamWidth(OwnWidth){
+	 Container():m_Left(0),m_Top(0),m_width(0),m_height(0),m_active(true),m_visible(true),m_owner(NULL), m_Aline(Aline_normal), m_custamWidth(OwnWidth),m_DrawType(dColor), m_angle(0.0f) {
 	 		 numbre=0;
 	 }
 	 virtual ~Container()
@@ -58,9 +66,10 @@ public:
             m_member[i]=NULL;
             m_member.erase(m_member.begin()+i);
         }
+        m_member.clear();
         delete m_owner;
 	 }
-void ClientToScreen(int &x, int &y) const
+void ClientToScreen(int &x, int &y) const//finding the position of the object toward their parents's position
 	{
 
 		x += m_Left;
@@ -87,6 +96,7 @@ void ClientToScreen(int &x, int &y) const
 		 m_member.push_back(new_member);
 		std::sort(m_member.begin(), m_member.end());
 	 }
+
 //Draw elements to the screen
     void c_Draw(SDL_Renderer* render)
     {
@@ -105,6 +115,7 @@ void ClientToScreen(int &x, int &y) const
 				 (*it)->c_Draw(render);
 			 }
     }
+
 //find positions to the objects :align and width
     void c_CustomizeObjPos()
     {
@@ -119,6 +130,7 @@ void ClientToScreen(int &x, int &y) const
 				 (*it)->c_CustomizeObjPos();
 			 }
     }
+
 //mouse position to the screen
     void c_OnMousePos(int mousex, int mousey, bool lbutton)
     {
@@ -130,14 +142,24 @@ void ClientToScreen(int &x, int &y) const
             (*it)->c_OnMousePos(mousex, mousey, lbutton);
         }
     }
-    virtual void Init(int tmp_Left, int tmp_Top, int width, int height, int tmp_Aline=Aline_normal, int tmp_Width=OwnWidth){
+
+    virtual void Init(int tmp_Left, int tmp_Top, int width, int height, SDL_Renderer* tmp_render, int tmp_Aline=Aline_normal, int tmp_Width=OwnWidth, int tmp_DrawType=dColor, std::string tmp_source="", int tmp_angle=0.0f ){
         m_Left=tmp_Left;
         m_Top=tmp_Top;
         m_width=width;
         m_height=height;
         m_Aline=tmp_Aline;
         m_custamWidth=tmp_Width;
-	 };
+        m_DrawType=tmp_DrawType;
+        m_angle=tmp_angle;
+        if(m_DrawType==dPicture)
+        {
+            m_image.Init(tmp_render, tmp_source, tmp_Left, tmp_Top);
+            m_image.m_img_width=width;
+            m_image.m_img_height=height;
+        }
+    }
+
 protected:
 	 virtual void Draw(SDL_Renderer* render, int x, int y){}
 	 virtual void MousePosition(int mousex, int mousey, bool lbutton){}
@@ -173,7 +195,8 @@ protected:
                 break;
             }
 
-        }}
+        }
+	 }
 
 
 };
@@ -249,8 +272,15 @@ protected:
 	 virtual void Draw(SDL_Renderer* render, int x, int y)
 	 {
 	    // CustomizeObjectPos();
+	    if(m_DrawType==dPicture)
+        {
+            m_image.Update(x, y, m_angle,0);
+            m_image.Draw(render);
+        }
+    else{
 		 DrawBox(render, x, y, m_width, m_height, m_colorborder);
 		 FillBox(render, x, y, m_width, m_height, m_colorfill);
+		 }
 	 }
 };
 
@@ -269,6 +299,7 @@ public:
         m_colorclick={0,255,255,255};
     }
     void (*m_pOnClick)();
+
     void Copy(Button& other) const
 	{
 		other.m_Left = m_Left;
@@ -284,67 +315,100 @@ public:
 	}
 protected:
     virtual void OnClick(){ if(m_pOnClick) m_pOnClick();}
+
     virtual void Draw(SDL_Renderer* render, int x, int y)
     {
         //m_Aline=Aline_normal;
         //m_custamWidth=OwnWidth;
         //CustomizeObjectPos();
+        if(m_DrawType==dPicture)
+        {
+            m_image.Draw(render);
+        }
+    else{
         DrawBox(render, x,y, m_width, m_height, m_colorborder);
 		 FillBox(render,x, y, m_width, m_height, (m_onHover)?m_colorhover:(m_Clicked)?m_colorclick:m_colorfill);
+        }
     }
+
     virtual void MousePosition(int mousex, int mousey,bool  lbutton){
         if((x<=mousex)&&((x+m_width)>=mousex)&&(y<=mousey)&&((y+m_height)>=mousey))
         {
             m_onHover=true;
             //printf("mouse x:%i\n", (mousex-(m_owner->m_Left)+m_Left));
-            if(SDL_PollEvent(&m_event))
-            {
-                if(m_event.type == SDL_MOUSEBUTTONDOWN)
-                {
-                    OnClick();
-                    m_Clicked=!m_Clicked;
-                }
+            if(lbutton){
+                OnClick();
+                m_Clicked=!m_Clicked;
+
 
             }
+
+
 
         }
         else{
             m_onHover=false;
             }
+
+        if(m_DrawType==dPicture)
+            {
+                if(m_onHover)
+                {
+                    m_image.Update(x, y, m_angle, 1);
+                }
+                else if(m_Clicked)
+                {
+                    m_image.Update(x, y, m_angle, 2);
+                }
+                else{
+                    m_image.Update(x, y, m_angle, 0);
+                }
+
+            }
     }
 };
 class Slider:public Button//SliderButton Still not counting the true coordinate of the mouse
 {
-public:
-    SDL_Color m_colorslider;
-    int m_proc;
-    Slider():m_proc(20){
-    m_colorslider={0, 0, 255, 255};
-    }
-protected:
-    virtual void Draw(SDL_Renderer* render, int x, int y)
-    {
-        DrawBox(render, x,y, m_width, m_height, m_colorborder);
-        FillBox(render,x, y, m_width, m_height, m_colorfill);
-        FillBox(render,x+2, y+2, m_proc, m_height-4, m_colorslider);
-    }
-    virtual void MousePosition(int mousex, int mousey,bool  lbutton){
-        int mousexchangeVal=(mousex-((m_owner->m_Left)+m_Left));
-
-         if((x<=mousex)&&((x+m_width)>=mousex)&&(y<=mousey)&&((y+m_height)>=mousey))
-        {
-printf("mousex:%i\n",mousexchangeVal );
-            if(SDL_PollEvent(&m_event))
-            {
-                if(m_event.type == SDL_MOUSEBUTTONDOWN)
-                {
-                    printf("mousex:%i\n",mousexchangeVal );
-                    m_proc=float((mousexchangeVal*100)/m_width);
-                }
-
+        public:
+            SDL_Color m_colorslider;
+            int m_proc;
+            Slider():m_proc(20){
+            m_colorslider={0, 0, 255, 255};
             }
 
-        }
-    }
+        protected:
+            virtual void Draw(SDL_Renderer* render, int x, int y)
+            {if(m_DrawType==dPicture)
+                {
+                   // m_image.Draw(x,y, m_width, m_height,m_angle,render);
+                }
+            else{
+                DrawBox(render, x,y, m_width, m_height, m_colorborder);
+                FillBox(render,x, y, m_width, m_height, m_colorfill);
+                FillBox(render,x+2, y+2, (m_width*m_proc)/100-2, m_height-4, m_colorslider);
+            }
+            }
+
+            virtual void MousePosition(int mousex, int mousey,bool  lbutton){
+                int mousexchangeVal=(mousex-x);
+
+                 if((x<=mousex)&&((x+m_width)>=mousex)&&(y<=mousey)&&((y+m_height)>=mousey))
+                {
+                printf("mousex:%i\n",mousexchangeVal );
+                if(lbutton){
+                    printf("mousex:%i\n",mousexchangeVal );
+                    m_proc=float((mousexchangeVal*100)/m_width);
+                    if(mousexchangeVal<0)
+                    {
+                        m_proc=0;
+                    }
+                    if(mousexchangeVal>100)
+                    {
+                        m_proc=100;
+                    }
+                }
+
+                }
+            }
 };
 #endif /* ELEMENTS_H_ */
