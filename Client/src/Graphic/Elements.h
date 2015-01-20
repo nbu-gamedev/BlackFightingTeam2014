@@ -4,15 +4,18 @@
  *  Created on: 25.11.2014 ã.
  *      Author: Niel-Home
  */
-
 #ifndef ELEMENTS_H_
 #define ELEMENTS_H_
 #include"stdio.h"
-#include"stdlib.h"
 #include "Graphic.h"
 #include "vector"
 #include "algorithm"
 #include "string"
+#include <stdlib.h>
+#include <iostream>
+#include "Definitions.h"
+int To_int(std::string tmp);
+
 struct Color
 {
     unsigned int red;
@@ -38,6 +41,10 @@ enum ElementWidth// choose the width of th object: to take the parent width or t
     OwnWidth,
 };
 
+
+
+
+
 class Container
 {
 public:
@@ -58,16 +65,9 @@ public:
 	 Container():m_Left(0),m_Top(0),m_width(0),m_height(0),m_active(true),m_visible(true),m_owner(NULL), m_Aline(Aline_normal), m_custamWidth(OwnWidth),m_DrawType(dColor), m_angle(0.0f) {
 	 		 numbre=0;
 	 }
-	 virtual ~Container()
+	~Container()
 	 {
-        for(unsigned int i=0; i<m_member.size(); i++)
-        {
-            delete m_member[i];
-            m_member[i]=NULL;
-            m_member.erase(m_member.begin()+i);
-        }
-        m_member.clear();
-        delete m_owner;
+
 	 }
 void ClientToScreen(int &x, int &y) const//finding the position of the object toward their parents's position
 	{
@@ -163,6 +163,7 @@ void ClientToScreen(int &x, int &y) const//finding the position of the object to
 protected:
 	 virtual void Draw(SDL_Renderer* render, int x, int y){}
 	 virtual void MousePosition(int mousex, int mousey, bool lbutton){}
+	 virtual void readFile(std::string filename){}
 	 virtual void CustomizeObjPos(){
 	 switch(m_Aline)
         {
@@ -206,82 +207,105 @@ protected:
 class Panel: public Container
 {
 public:
+    std::vector<PanelInfo> m_PanelInfo;
     SDL_Color m_colorborder, m_colorfill;
 	Panel()
 	{
         m_colorborder={255,255,255,255};
         m_colorfill={255,255,255,255};
+
 	}
 	~Panel()
 	 {
-        for(unsigned int i=0; i<m_member.size(); i++)
-        {
-            delete m_member[i];
-            m_member[i]=NULL;
-            m_member.erase(m_member.begin()+i);
-        }
-        delete m_owner;
+
 	 }
+
 	void Copy(Panel& other) const
 	{
 		other.m_Left = m_Left;
 		other.m_Top = m_Top;
-		other.m_width = m_width;
-		other.m_height = m_height;
+		other.m_width = m_width/2;
+		other.m_height = m_height/2;
 		other.m_Aline=m_Aline;
         other.m_custamWidth=m_custamWidth;
         other.m_colorborder=m_colorborder;
         other.m_colorfill=m_colorfill;
 	}
+    virtual void readFile(std::string filename){
+        std::ifstream file;
+        file.open(filename);
+        bool firstline=true;
+        unsigned int strbeg=0;
+        std::vector<std::string>tmpVars;
+        if(file.is_open())
+        {
+            while(!file.eof())
+            {
+                std::string tmp="";
+                if(firstline){
+                    getline(file, tmp);
+                    firstline=false;
+                }
+                else{
+                        getline(file, tmp);
+                        tmpVars.clear();
+                        for(unsigned int i = 0; i<=tmp.size(); i++)
+                            {
+                                if((tmp[i]==','))
+                                {
+                                    tmpVars.push_back(tmp.substr(strbeg, i-strbeg));
+                                    strbeg=i+1;
+                                }
+                                if(i==tmp.size())
+                                {
+                                     tmpVars.push_back(tmp.substr(strbeg, i-strbeg));
+                                }
+                            }
+                            strbeg=0;
+                            PanelInfo info;
+                             info.width=To_int(tmpVars[0]);
+                             info.height=To_int(tmpVars[1]);
+                             info.left=To_int(tmpVars[2]);
+                             info.top=To_int(tmpVars[3]);
+                            m_PanelInfo.push_back(info);
+                             std::cout<<info.width<<"\n";
+                            std::cout<<info.height<<"\n";
+                            std::cout<<info.left<<"\n";
+                            std::cout<<info.top<<"\n";
 
+
+                }
+
+
+            }
+
+         }
+         for(unsigned int i =0; i<m_PanelInfo.size()-1; i++)
+         {
+             std::cout<<m_PanelInfo[i].width<<"\n";
+                            std::cout<<m_PanelInfo[i].height<<"\n";
+                            std::cout<<m_PanelInfo[i].left<<"\n";
+                            std::cout<<m_PanelInfo[i].top<<"\n";
+         }
+	 }
 protected:
-	/* virtual void CustomizeObjectPos()
-	 {
-	     switch(m_Aline)
-        {
-        case Aline_left:
-            m_Left=0;
-            break;
-        case Aline_right:
-            m_Left=(((m_owner->m_Left)+(m_owner->m_width))-m_width);
-            break;
-        case Aline_center:
-            m_Left=((m_owner->m_width)-m_width)/2;
-            break;
-        case Aline_normal:
-            m_Left=m_Left;
-            break;
-        }
 
-        switch(m_custamWidth)
-        {
-        case ParentWidth:
-            {
-                m_width=m_owner->m_width;
-                m_Left=0;
-                break;
-            }
-        case OwnWidth:
-            {
-                m_width=m_width;
-                break;
-            }
-
-        }
-	 }*/
 	 virtual void Draw(SDL_Renderer* render, int x, int y)
 	 {
 	    // CustomizeObjectPos();
 	    if(m_DrawType==dPicture)
         {
-            m_image.Update(x, y, m_angle,0);
+           // m_image.Update(x, y, m_angle,0);
+           //printf("m_image height %i\n",  m_image.m_img_height);
             m_image.Draw(render);
         }
     else{
+
 		 DrawBox(render, x, y, m_width, m_height, m_colorborder);
 		 FillBox(render, x, y, m_width, m_height, m_colorfill);
 		 }
 	 }
+
 };
 
 
@@ -298,6 +322,10 @@ public:
         m_colorhover={255,255,255,255};
         m_colorclick={0,255,255,255};
     }
+    ~Button()
+	 {
+
+	 }
     void (*m_pOnClick)();
 
     void Copy(Button& other) const
@@ -318,9 +346,7 @@ protected:
 
     virtual void Draw(SDL_Renderer* render, int x, int y)
     {
-        //m_Aline=Aline_normal;
-        //m_custamWidth=OwnWidth;
-        //CustomizeObjectPos();
+
         if(m_DrawType==dPicture)
         {
             m_image.Draw(render);
@@ -369,23 +395,30 @@ protected:
 };
 class Slider:public Button//SliderButton Still not counting the true coordinate of the mouse
 {
-        public:
-            SDL_Color m_colorslider;
-            int m_proc;
-            Slider():m_proc(20){
-            m_colorslider={0, 0, 255, 255};
-            }
+public:
+    float *m_fValue;
+    float m_minValue, m_maxValue;
+    SDL_Color m_colorslider;
+    int m_proc;
+    Slider():m_proc(20),m_minValue(0), m_maxValue(0){
+        m_colorslider={0, 0, 255, 255};
+        //*m_fValue=0;
+        }
+   ~Slider()
+	 {
 
+	 }
         protected:
             virtual void Draw(SDL_Renderer* render, int x, int y)
             {if(m_DrawType==dPicture)
                 {
-                   // m_image.Draw(x,y, m_width, m_height,m_angle,render);
+                   //m_image.Draw(x,y, m_width, m_height,m_angle,render);
                 }
             else{
+                m_proc=((*m_fValue*100)/m_maxValue);
                 DrawBox(render, x,y, m_width, m_height, m_colorborder);
                 FillBox(render,x, y, m_width, m_height, m_colorfill);
-                FillBox(render,x+2, y+2, (m_width*m_proc)/100-2, m_height-4, m_colorslider);
+                 FillBox(render,x+2, y+2, ((m_width*m_proc)/100)-4, m_height-4, m_colorslider);
             }
             }
 
@@ -396,18 +429,29 @@ class Slider:public Button//SliderButton Still not counting the true coordinate 
                 {
                 printf("mousex:%i\n",mousexchangeVal );
                 if(lbutton){
-                    printf("mousex:%i\n",mousexchangeVal );
+                m_Clicked=!m_Clicked;
+
+
+                }
+
+                    if(m_Clicked){
+                   // printf("mousex:%i\n",mousexchangeVal );
                     m_proc=float((mousexchangeVal*100)/m_width);
                     if(mousexchangeVal<0)
                     {
                         m_proc=0;
                     }
-                    if(mousexchangeVal>100)
+
+                    *m_fValue=(m_proc*m_maxValue)/100;
+                    if(*m_fValue<m_minValue)
                     {
-                        m_proc=100;
+                        *m_fValue=m_minValue;
                     }
                 }
 
+                }
+                else{
+                    m_Clicked=false;
                 }
             }
 };

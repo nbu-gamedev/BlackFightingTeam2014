@@ -42,11 +42,8 @@ public:
 	SDL_RendererFlip m_flip;
 };
 
-std::string delSpace(std::string &tmp_str);
-std::string deCaps(std::string tmp);
-int To_int(string tmp);
 
-int To_int(string tmp);
+
 void DrawBox(SDL_Renderer* render, int x, int y, int width, int height,SDL_Color& boxcolor);
 void FillBox(SDL_Renderer* render, int x, int y, int width, int height,SDL_Color& fillcolor);
 void DrawCircle(SDL_Renderer* render, int center_x, int center_y, int radius,SDL_Color& circlecolor);

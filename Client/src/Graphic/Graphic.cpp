@@ -1,36 +1,7 @@
 #include"Graphic.h"
 
 
-string delSpace(string &tmp_str)
-{
-    while(' ' == tmp_str[0] && 0<tmp_str.length()) tmp_str.erase(tmp_str.begin());
-    while(' ' == tmp_str[tmp_str.length()-1] && 0<tmp_str.length()) tmp_str.erase(tmp_str.end()-1);
 
-    return tmp_str;
-}
-
-string deCaps(string tmp)
-{
-    for(unsigned int i=0; i<tmp.length(); i++)
-    {
-        if((tmp[i]>='A')&&(tmp[i]<='Z'))
-        {
-            tmp[i]=(tolower(tmp[i]));
-        }
-    }
-    return tmp;
-}
-
-int To_int(string tmp)
-{
-    int numbre=0;
-    if ('0' <= tmp[0] && tmp[0] <= '9')
-        {
-            numbre=atoi(tmp.c_str());
-            tmp="";
-        }
-    return numbre;
-}
 
 Picture::Picture()
 {
@@ -66,9 +37,9 @@ string Picture::Read_Data(string delimiter, string prefix )
             getline(m_read_file, tmp);
         }
 
-        data=deCaps(tmp.substr(0, tmp.find(delimiter)));
-        data=delSpace(data);
-        prefix=deCaps(prefix);
+//        data=deCaps(tmp.substr(0, tmp.find(delimiter)));
+      //  data=delSpace(data);
+       // prefix=deCaps(prefix);
 
         if(tmp[0]=='/')
         {
@@ -78,7 +49,7 @@ string Picture::Read_Data(string delimiter, string prefix )
             if(data==prefix)
             {
                 data=tmp.substr((tmp.find(delimiter)+1), tmp.size());
-                data=delSpace(data);
+              //  data=delSpace(data);
                 tmp="";
                 return data;
             }
@@ -137,6 +108,8 @@ void DrawBox(SDL_Renderer* render, int x, int y, int width, int height,SDL_Color
 	SDL_SetRenderDrawColor(render,boxcolor.r,boxcolor.g,boxcolor.b,boxcolor.a  );
 
 	SDL_Rect Rectagle{x, y, width, height};
+	SDL_Rect Size{x, y, width, height};
+	//SDL_RenderCopyEx(render, NUll, &Rectagle, &Size, 0.0, NULL, SDL_FLIP_NONE);
 	SDL_RenderDrawRect(render,&Rectagle);
 }
 
@@ -144,6 +117,7 @@ void FillBox(SDL_Renderer* render, int x, int y, int width, int height,SDL_Color
 {
 	SDL_SetRenderDrawColor(render, fillcolor.r,fillcolor.g,fillcolor.b,fillcolor.a  );
 	SDL_Rect Rectagle{x, y, width, height};
+	//SDL_RenderCopyEx(render, NUll, &Rectagle, &Size, 0.0, NULL, SDL_FLIP_NONE);
 	SDL_RenderFillRect( render, &Rectagle);
 }
 
@@ -235,7 +209,7 @@ printf("Frames.h- %i \n", Frames.h);
         }
         m_xCoordinate=x;
     m_yCoordinate=y;
-    m_img_width=100; m_img_height=100;
+    m_img_width=m_width/m_frames_x; m_img_height=m_height/m_frames_y;
     printf("init succ image");
 }
 void ButtonImg::Update(int x, int y, float angle, int indexOfelement)
@@ -245,3 +219,4 @@ void ButtonImg::Update(int x, int y, float angle, int indexOfelement)
     m_angle=int(m_angle+angle)%360;
     m_vector_index=indexOfelement;
 }
+
