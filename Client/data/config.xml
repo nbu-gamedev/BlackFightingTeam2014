@@ -1,0 +1,46 @@
+<STATES>
+	<MENU>
+		<TEXTURES>
+			<texture filename="data/image/backgrounds/Login2.png" ID="bg1"/>
+			<texture filename="data/image/buttons/LoginButton.png" ID="loginButton"/>
+			<texture filename="data/image/buttons/ExitButton.png" ID="exitbutton"/>
+			<texture filename="data/image/UI/BFTLogo.png" ID="logo" />
+		</TEXTURES>
+	<OBJECTS>
+		<object type="Background" x="0" y="0" width="0" height="0" dW="0" dH="0" textureID="bg1" numFrames="0" callbackID="0"/>
+		<object type="MenuButton" x="100" y="560" width="186" height="52" dW="186" dH="52" textureID="loginButton" numFrames="0" callbackID="1" aligment="1" mergeX="0"mergeY="0"/>
+		<object type="MenuButton" x="100" y="652" width="186" height="52" dW="186" dH="52" textureID="exitbutton" numFrames="0" callbackID="2" aligment="1" mergeX="0" mergeY="0"/>
+		<object type="Picture" x="0" y="0" width="500" height="200" dW="500" dH="200" textureID="logo" numFrames="0" callbackID="0" aligment="1" mergeY="20"/>
+	</OBJECTS>
+	</MENU>
+	<CHOSE_CHAR>
+	<TEXTURES>
+			<texture filename="data/image/backgrounds/Metal.png" ID="chosecharBG"/>
+			<texture filename="data/image/buttons/CreateButton.png" ID="createbutton"/>
+			<texture filename="data/image/buttons/ExitButton.png" ID="CharExitbutton"/>
+			<texture filename="data/image/buttons/StartButton.png" ID="playbutton"/>
+			<texture filename="data/image/character/Orc.png" ID="orc_char"/>
+			<texture filename="data/image/character/Elf.png" ID="elf_char"/>
+	</TEXTURES>
+	<OBJECTS>
+		<object type="Background" x="0" y="0" height="0" width="0" dW="0" dH="0" textureID="chosecharBG" numFrames="0"/>
+		<object type="MenuButton" x="100" y="700" width="186" height="52" dW="186" dH="52" textureID="createbutton" numFrames="0" callbackID="1" aligment="1" mergeX="20"mergeY="0"/>
+		<object type="MenuButton" x="100" y="700" width="186" height="52" dW="186" dH="52" textureID="CharExitbutton" numFrames="0" callbackID="2" aligment="1" mergeX="-20" mergeY="0"/>
+		<object type="MenuButton" x="100" y="700" width="186" height="52" dW="186" dH="52" textureID="playbutton" numFrames="0" callbackID="3" aligment="1" mergeX="0"mergeY="0"/>
+	</OBJECTS>
+	</CHOSE_CHAR>
+	<CREATE_CHAR>
+	<TEXTURES>
+		<texture filename="data/image/backgrounds/dark-blue.png" ID="createBG"/>
+		<texture filename="data/image/buttons/CreateButton.png" ID="createbutton2"/>
+		<texture filename="data/image/buttons/BackButton.png" ID="backbutton" />
+	</TEXTURES>
+	<OBJECTS>
+		<object type="Background" x="0" y="0" height="0" width="0" dW="0" dH="0" textureID="createBG" numFrames="0"/>
+		<object type="MenuButton" x="100" y="700" width="186" height="52" dW="186" dH="52" textureID="createbutton2" numFrames="0" callbackID="1" aligment="1" mergeX="0"mergeY="0"/>
+		<object type="MenuButton" x="100" y="700" width="186" height="52" dW="186" dH="52" textureID="backbutton" numFrames="0" callbackID="2" aligment="1" mergeX="-20"mergeY="0"/>
+	</OBJECTS>
+	</CREATE_CHAR>
+	<GAMEOVER>
+	</GAMEOVER>
+</STATES>

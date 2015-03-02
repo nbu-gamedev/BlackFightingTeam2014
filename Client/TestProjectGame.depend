@@ -1,0 +1,1784 @@
+# depslib dependency file v1.0
+1424634028 source:e:\c++ game programing\testprojectgame\main.cpp
+	<iostream>
+	"src/SDL_Config.h"
+	"src/Game.h"
+	"src/BSDv2.h"
+
+1423772884 source:e:\c++ game programing\testprojectgame\src\tools.cpp
+	"Tools.h"
+	<fstream>
+	"SDL_image.h"
+	"SDL_Config.h"
+
+1423772824 e:\c++ game programing\testprojectgame\src\tools.h
+	<string>
+	<vector>
+	"Defines.h"
+
+1424360953 source:e:\c++ game programing\testprojectgame\src\sdl_config.cpp
+	"SDL_Config.h"
+	<iostream>
+	<fstream>
+	<string>
+	"Tools.h"
+	"SDL_ttf.h"
+	"SDL_image.h"
+
+1423516852 e:\c++ game programing\testprojectgame\src\sdl_config.h
+	"SDL.h"
+	<string>
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1421798934 e:\library c++\sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\begin_code.h
+
+1382548024 e:\library c++\sdl2\include\sdl2\close_code.h
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\library c++\sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376116944 e:\library c++\sdl2\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376116742 e:\library c++\sdl2\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1424640142 source:e:\c++ game programing\testprojectgame\src\elements.cpp
+	"Elements.h"
+	"SDL_image.h"
+	"Input.h"
+	"Game.h"
+
+1424638270 e:\c++ game programing\testprojectgame\src\elements.h
+	"Defines.h"
+	<vector>
+	<string>
+	<map>
+	<functional>
+	<memory>
+	"Graphic.h"
+	"Vector2D.h"
+	<functional>
+
+1424426684 e:\c++ game programing\testprojectgame\src\defines.h
+	<iostream>
+	"SDL.h"
+
+1424385120 source:e:\c++ game programing\testprojectgame\src\graphic.cpp
+	"Graphic.h"
+
+1424360260 e:\c++ game programing\testprojectgame\src\graphic.h
+	<iostream>
+	"SDL.h"
+	"Tools.h"
+	"SDL_Config.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	<vector>
+	<map>
+
+1423476730 source:e:\c++ game programing\testprojectgame\src\extralibs\tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<cstddef>
+
+1423476730 e:\c++ game programing\testprojectgame\src\extralibs\tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cstdarg>
+	<android/log.h>
+	<assert.h>
+
+1424640228 source:e:\c++ game programing\testprojectgame\src\statemaneger.cpp
+	"StateManager.h"
+	"XML_Parser.h"
+	"Input.h"
+	"Game.h"
+
+1424639543 e:\c++ game programing\testprojectgame\src\statemanager.h
+	<iostream>
+	<vector>
+	<functional>
+	"Elements.h"
+	"BSDv2.h"
+
+1424636997 e:\c++ game programing\testprojectgame\src\game.h
+	"Defines.h"
+	"Graphic.h"
+	"Tools.h"
+	"Elements.h"
+	"StateManager.h"
+
+1424640037 source:e:\c++ game programing\testprojectgame\src\game.cpp
+	"Game.h"
+	"Input.h"
+
+1423868908 e:\c++ game programing\testprojectgame\src\vector2d.h
+	<stdio.h>
+	<math.h>
+
+1398620900 source:e:\c++ game programing\testprojectgame\src\vector2d.cpp
+	"Vector2D.h"
+
+1424243978 source:c:\users\alex\desktop\testprojectgame\main.cpp
+	<iostream>
+	"src/SDL_Config.h"
+	"src/Game.h"
+
+1423516852 c:\users\alex\desktop\testprojectgame\src\sdl_config.h
+	"SDL.h"
+	<string>
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1421798936 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\begin_code.h
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\close_code.h
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1424252716 c:\users\alex\desktop\testprojectgame\src\elements.h
+	"Defines.h"
+	<vector>
+	<string>
+	<map>
+	<functional>
+	<memory>
+	"Graphic.h"
+	"Vector2D.h"
+
+1423773042 c:\users\alex\desktop\testprojectgame\src\defines.h
+	<iostream>
+	"SDL.h"
+
+1424252733 c:\users\alex\desktop\testprojectgame\src\graphic.h
+	<iostream>
+	"SDL.h"
+	"Tools.h"
+	"SDL_Config.h"
+	"SDL_image.h"
+	<vector>
+	<map>
+
+1423772824 c:\users\alex\desktop\testprojectgame\src\tools.h
+	<string>
+	<vector>
+	"Defines.h"
+
+1376116742 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1423868908 c:\users\alex\desktop\testprojectgame\src\vector2d.h
+	<stdio.h>
+	<math.h>
+
+1423476730 c:\users\alex\desktop\testprojectgame\src\extralibs\tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cstdarg>
+	<android/log.h>
+	<assert.h>
+
+1424196232 c:\users\alex\desktop\testprojectgame\src\statemanager.h
+	<iostream>
+	<vector>
+	"Elements.h"
+
+1424196046 c:\users\alex\desktop\testprojectgame\src\game.h
+	"Defines.h"
+	"Graphic.h"
+	"Tools.h"
+	"Elements.h"
+	"StateManager.h"
+
+1424252726 source:c:\users\alex\desktop\testprojectgame\src\elements.cpp
+	"Elements.h"
+	"SDL_image.h"
+	"Input.h"
+	"Game.h"
+
+1376116944 c:\users\alex\desktop\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1423476730 source:c:\users\alex\desktop\testprojectgame\src\extralibs\tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<cstddef>
+
+1424211578 source:c:\users\alex\desktop\testprojectgame\src\game.cpp
+	"Game.h"
+	"Input.h"
+
+1424252735 source:c:\users\alex\desktop\testprojectgame\src\graphic.cpp
+	"Graphic.h"
+
+1424244250 source:c:\users\alex\desktop\testprojectgame\src\sdl_config.cpp
+	"SDL_Config.h"
+	<iostream>
+	<fstream>
+	<string>
+	"Tools.h"
+	"SDL_ttf.h"
+	"SDL_image.h"
+
+1424105426 source:c:\users\alex\desktop\testprojectgame\src\statemaneger.cpp
+	"StateManager.h"
+	"XML_Parser.h"
+
+1423772884 source:c:\users\alex\desktop\testprojectgame\src\tools.cpp
+	"Tools.h"
+	<fstream>
+	"SDL_image.h"
+	"SDL_Config.h"
+
+1398620900 source:c:\users\alex\desktop\testprojectgame\src\vector2d.cpp
+	"Vector2D.h"
+
+1424110478 source:c:\users\alex\desktop\testprojectgame\src\xml_parser.cpp
+	"XML_Parser.h"
+
+1424100402 c:\users\alex\desktop\testprojectgame\src\xml_parser.h
+	"ExtraLibs/tinyxml2.h"
+	"Graphic.h"
+	"Tools.h"
+	"Game.h"
+	"Elements.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1421798936 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\begin_code.h
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\close_code.h
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376116742 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376116944 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1424423711 source:e:\c++ game programing\testprojectgame\src\xml_parser.cpp
+	"XML_Parser.h"
+
+1424390496 e:\c++ game programing\testprojectgame\src\xml_parser.h
+	"ExtraLibs/tinyxml2.h"
+	"Graphic.h"
+	"Tools.h"
+	"Game.h"
+	"Elements.h"
+
+1424360729 e:\c++ game programing\testprojectgame\src\input.h
+	"Defines.h"
+	"Vector2D.h"
+	<vector>
+
+1424385416 source:e:\c++ game programing\testprojectgame\src\input.cpp
+	"Input.h"
+
+1424243978 source:d:\testprojectgame\main.cpp
+	<iostream>
+	"src/SDL_Config.h"
+	"src/Game.h"
+
+1423516852 d:\testprojectgame\src\sdl_config.h
+	"SDL.h"
+	<string>
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1421798936 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\begin_code.h
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\close_code.h
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1424196046 d:\testprojectgame\src\game.h
+	"Defines.h"
+	"Graphic.h"
+	"Tools.h"
+	"Elements.h"
+	"StateManager.h"
+
+1423773042 d:\testprojectgame\src\defines.h
+	<iostream>
+	"SDL.h"
+
+1424251900 d:\testprojectgame\src\graphic.h
+	<iostream>
+	"SDL.h"
+	"Tools.h"
+	"SDL_Config.h"
+	"SDL_image.h"
+	"Elements.h"
+	<vector>
+	<map>
+
+1423772824 d:\testprojectgame\src\tools.h
+	<string>
+	<vector>
+	"Defines.h"
+
+1376116742 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1424250182 d:\testprojectgame\src\elements.h
+	"Defines.h"
+	<vector>
+	<string>
+	<functional>
+	<memory>
+	"Graphic.h"
+	"Vector2D.h"
+
+1423868908 d:\testprojectgame\src\vector2d.h
+	<stdio.h>
+	<math.h>
+
+1424196232 d:\testprojectgame\src\statemanager.h
+	<iostream>
+	<vector>
+	"Elements.h"
+
+1424250274 source:d:\testprojectgame\src\elements.cpp
+	"Elements.h"
+	"SDL_image.h"
+	"Input.h"
+	"Game.h"
+
+1424211320 d:\testprojectgame\src\input.h
+	"Defines.h"
+	"Vector2D.h"
+	<vector>
+
+1423476730 source:d:\testprojectgame\src\extralibs\tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<cstddef>
+
+1423476730 d:\testprojectgame\src\extralibs\tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cstdarg>
+	<android/log.h>
+	<assert.h>
+
+1424211578 source:d:\testprojectgame\src\game.cpp
+	"Game.h"
+	"Input.h"
+
+1424249656 source:d:\testprojectgame\src\graphic.cpp
+	"Graphic.h"
+
+1424211664 source:d:\testprojectgame\src\input.cpp
+	"Input.h"
+
+1424244250 source:d:\testprojectgame\src\sdl_config.cpp
+	"SDL_Config.h"
+	<iostream>
+	<fstream>
+	<string>
+	"Tools.h"
+	"SDL_ttf.h"
+	"SDL_image.h"
+
+1376116944 d:\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1424105426 source:d:\testprojectgame\src\statemaneger.cpp
+	"StateManager.h"
+	"XML_Parser.h"
+
+1424100402 d:\testprojectgame\src\xml_parser.h
+	"ExtraLibs/tinyxml2.h"
+	"Graphic.h"
+	"Tools.h"
+	"Game.h"
+	"Elements.h"
+
+1423772884 source:d:\testprojectgame\src\tools.cpp
+	"Tools.h"
+	<fstream>
+	"SDL_image.h"
+	"SDL_Config.h"
+
+1398620900 source:d:\testprojectgame\src\vector2d.cpp
+	"Vector2D.h"
+
+1424110478 source:d:\testprojectgame\src\xml_parser.cpp
+	"XML_Parser.h"
+
+1424211320 c:\users\alex\desktop\testprojectgame\src\input.h
+	"Defines.h"
+	"Vector2D.h"
+	<vector>
+
+1424211664 source:c:\users\alex\desktop\testprojectgame\src\input.cpp
+	"Input.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_font.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test.h
+	"SDL.h"
+	"SDL_test_common.h"
+	"SDL_test_font.h"
+	"SDL_test_random.h"
+	"SDL_test_fuzzer.h"
+	"SDL_test_crc32.h"
+	"SDL_test_md5.h"
+	"SDL_test_log.h"
+	"SDL_test_assert.h"
+	"SDL_test_harness.h"
+	"SDL_test_images.h"
+	"SDL_test_compare.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_common.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_random.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_fuzzer.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_crc32.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_md5.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_log.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_assert.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_harness.h
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_images.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1382548024 e:\c++ game programing\testprojectgame\src\extralibs\sdl2\include\sdl2\sdl_test_compare.h
+	"SDL.h"
+	"SDL_test_images.h"
+	"begin_code.h"
+	"close_code.h"
+
+1424282221 e:\c++ game programing\testprojectgame\src\bsdv2.h
+	<winsock2.h>
+	<windows.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<errno.h>
+	"boost\function.hpp"
+	<list>
+	<queue>
+	<string>
+
+1424288015 source:e:\c++ game programing\testprojectgame\src\bsdv2.cpp
+	"BSDv2.h"
+	<iostream>
+	<time.h>
+
+1424462687 source:e:\c++ game programing\testprojectgame\src\player.cpp
+	"Player.h"
+
+1424634933 e:\c++ game programing\testprojectgame\src\player.h
+	"Vector2D.h"
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TestProjectGame" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TestProjectGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add option="-DWIN32=1" />
+					<Add option="-DBFT_client=1" />
+					<Add directory="../../Library C++/SDL2/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2" />
+					<Add option="-lSDL2_image -lSDL2_ttf -lws2_32" />
+					<Add directory="../../Library C++/SDL2/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TestProjectGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="src/ExtraLibs/SDL2/include/SDL2" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2" />
+			<Add option="-lSDL2_image -lSDL2_ttf" />
+			<Add directory="src/ExtraLibs/SDL2/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/BSDv2.cpp" />
+		<Unit filename="src/BSDv2.h" />
+		<Unit filename="src/Defines.h" />
+		<Unit filename="src/Elements.cpp" />
+		<Unit filename="src/Elements.h" />
+		<Unit filename="src/ExtraLibs/tinyxml2.cpp" />
+		<Unit filename="src/ExtraLibs/tinyxml2.h" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Game.h" />
+		<Unit filename="src/Graphic.cpp" />
+		<Unit filename="src/Graphic.h" />
+		<Unit filename="src/Input.cpp" />
+		<Unit filename="src/Input.h" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Player.h" />
+		<Unit filename="src/SDL_Config.cpp" />
+		<Unit filename="src/SDL_Config.h" />
+		<Unit filename="src/StateManager.h" />
+		<Unit filename="src/StateManeger.cpp" />
+		<Unit filename="src/Tools.cpp" />
+		<Unit filename="src/Tools.h" />
+		<Unit filename="src/Vector2D.cpp" />
+		<Unit filename="src/Vector2D.h" />
+		<Unit filename="src/XML_Parser.cpp" />
+		<Unit filename="src/XML_Parser.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
